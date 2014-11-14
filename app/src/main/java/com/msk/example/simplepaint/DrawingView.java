@@ -17,6 +17,7 @@ public class DrawingView extends View {
     private Path drawPath;
     private Paint drawPaint, canvasPaint;
     private int paintColor = Color.BLACK; //default color
+    private int defaultPaintWidth = 20;
     private Canvas drawCanvas;
     private Bitmap canvasBitmap;
 
@@ -26,7 +27,18 @@ public class DrawingView extends View {
     }
 
     private void setupDrawingView() {
+        drawPath = new Path();
+        drawPaint = new Paint();
 
+        drawPaint.setColor(paintColor);
+
+        drawPaint.setAntiAlias(true);
+        drawPaint.setStrokeWidth(defaultPaintWidth);
+        drawPaint.setStyle(Paint.Style.STROKE);
+        drawPaint.setStrokeJoin(Paint.Join.ROUND);
+        drawPaint.setStrokeCap(Paint.Cap.ROUND);
+
+        canvasPaint = new Paint(Paint.DITHER_FLAG);
     }
 
 
