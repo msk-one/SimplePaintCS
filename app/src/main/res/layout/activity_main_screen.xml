@@ -5,4 +5,57 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainScreen">
 
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="BLA"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="BLU"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/button"
+        android:layout_toEndOf="@+id/button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="RED"
+        android:id="@+id/button3"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:text="GRE"
+        android:id="@+id/button4"
+        android:layout_toEndOf="@+id/button3"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="YEL"
+        android:id="@+id/button5"
+        android:layout_toEndOf="@+id/button4"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:text="WHI"
+        android:id="@+id/button6"
+        android:layout_toEndOf="@+id/button5"
+        android:layout_alignParentBottom="true" />
+
 </RelativeLayout>
