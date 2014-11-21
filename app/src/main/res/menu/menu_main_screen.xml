@@ -8,5 +8,4 @@
         android:orderInCategory="100" android:showAsAction="never" />
     <item android:id="@+id/action_changecolor" android:title="@string/action_changecolor"
         android:orderInCategory="100" android:showAsAction="never" />
-
 </menu>
